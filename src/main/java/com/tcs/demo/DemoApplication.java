@@ -14,7 +14,7 @@ public class DemoApplication {
 	@RequestMapping("/list_contact")
 	public String Welcome()
 	{
-		return ("COntact");
+		return ("Contact");
 		
 	}
 }

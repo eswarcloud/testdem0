@@ -1,18 +1,23 @@
+<!DOCTYPE html>
 <html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Spring Boot Web Application Example</title>
+</head>
 <body>
-<h1> Hiiiiiiiiiii........</h1>
-Enter Your Name: <input type="text" id="myText" name="fname" ><br>
-
-<button onclick="myFunction()">Submit</button>
-	
-<h1 id="demo"></h1>
-
+	<form action="welcome.html">
+    <h1>Hiii..........</h1>
+	<h2>Enter Your Name:<input type="text" id="name"/>
+	<input type="submit" onclick="valueSender()" value="Submit" />
+  </h2>
+  </form>
 <script>
-function myFunction() {
-  var x = document.getElementById("myText").value;
-  document.getElementById("demo").innerHTML = x;
-}
+    function valueSender()
+	{
+		var x = document.getElementById("name").value;
+  		localStorage.setItem("textvalue",x);
+  		return false;
+	}
 </script>
-
 </body>
 </html>
